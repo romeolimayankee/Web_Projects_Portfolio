@@ -1,0 +1,59 @@
+body {background-color: #0099CC;
+		  font-family: Verdana, Arial, sans-serif;
+		  
+	}	
+#wrapper {
+		position: relative;
+		height: 1000px;
+		width: 700px;
+		top: -50px;
+		bottom:30px;
+		margin: 0 auto;
+		background-color: #3399FF;
+		}
+	
+h1 {
+		text-align: center;
+		top: -50px;
+}
+
+h2 {
+	    text-align: center;
+		}
+ul{
+	text-align: center;
+}
+li {
+	text-align: center;
+}
+		
+.contactinfo {
+			position:relative;
+			text-align: center;
+			font-family: Verdana, sans-serif;
+			
+}
+
+.education {
+			position:relative;
+			text-align: center;
+			font-family: Verdana, sans-serif;
+}
+.workexperiance {
+			position:relative;
+			text-align: center;
+			font-family: Verdana, sans-serif;
+}
+.extracurricularacivities {
+			position:relative;
+			text-align: center;
+			font-family: Verdana, sans-serif;
+}
+.volunteerwork {
+			position:relative;
+			text-align: center;
+			font-family: Verdana, sans-serif;
+}
+footer {
+		text-align: center;
+		}
