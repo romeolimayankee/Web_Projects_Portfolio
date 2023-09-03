@@ -1,0 +1,57 @@
+#wrapper {
+			position: relative;
+			height: 300px;
+			width: 521px;
+			margin: auto;
+			padding: 10%;
+			background-color: #99FFE6;
+}
+.h2 {
+	position: relative;
+	height: 60px;
+	width: 521px;
+	padding:5%;
+	text-align: center;
+	 font-family: Arial, Helvetica, sans-serif;
+	 background-color:#33CC00;
+	 
+}	
+.nav {
+	float: left;
+	width: 150px;
+	height: 252px;
+	background-color:#0066CC; 
+	text-align: center;
+}
+.nav a { 
+  color: black; 
+  display: block; 
+  padding: 15.9px;
+  text-decoration: none;}
+	
+.main {
+	position: relative;
+	height: 200px;
+	width: 408px;
+	background-color: #FFCC66;
+	left:113px;
+	text-align: left;
+	padding:5%;
+}
+.image1 {
+	position: relative;
+	background-image: url("../images/bridstalk.jpg");
+	height: 100px;
+	width: 200px;
+	background-size: 100%;
+}
+
+.image2 {
+	position: relative;
+	background-image: url("../images/bluebird.jpg");
+	height: 150px;
+	width: 200px;
+	background-size: 100%;
+	left: 220px;
+	top: -100px;
+}

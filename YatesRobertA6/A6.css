@@ -1,0 +1,23 @@
+#wrapper {
+			position: relative;
+			height: 300px;
+			width: 521px;
+			margin: auto;
+			background-color: #CC99CC;
+}
+.h2 {
+	position: relative;
+	height: 60px;
+	width: 521px;
+	text-align: center;
+	 font-family: Arial, Helvetica, sans-serif;
+	 background-color:#F2F4D9;
+	 
+}	
+.nav {
+	float: left;
+	width: 150px;
+	background-color:#F2F4D9; 
+	text-align: center;
+}
+	

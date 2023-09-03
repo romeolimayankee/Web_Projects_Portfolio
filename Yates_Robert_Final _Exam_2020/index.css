@@ -1,0 +1,99 @@
+#wrapper {
+    position: relative;
+    height: 789px;
+    width: 700px;
+    margin:  auto;
+    background-color: #FFE4C4;
+}
+.nav {
+    height:650px;
+    width: 100px;
+    text-align:center;
+    background-color:#E9967A;
+    font-family: Arial, Helvetica, sans-serif;
+	color: #8B0000;
+}
+.nav a {
+    color: #8B0000; 
+    display: block;
+    padding: 15.9px;
+    text-decoration: none;
+}
+.nav a:hover {background-color: #FF7F50;}
+.dropbtn {
+  background-color: #E9967A;
+  color: #8B0000;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {font-size: 19px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F5F5DC;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #FF7F50;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.dropdown:hover .dropbtn {background-color: #FF7F50;}
+
+.h1 {
+    position: relative;
+    height: 80px;
+    width: 660px;
+    padding: 20px;
+    text-align: center;
+    background-image: url("Images/bluesky.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    background-size:100%;
+	color: #A9A9A9;}
+h4 { 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 200%;
+}
+
+.main {
+    position: relative;
+    height: 260px;
+    width: 560px;
+    padding: 20px;
+    left: 100px;
+    top: -600px;
+    background-color: #FFE4C4;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    position: relative;
+    bottom: 300px;
+    background-color: #F08080;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
