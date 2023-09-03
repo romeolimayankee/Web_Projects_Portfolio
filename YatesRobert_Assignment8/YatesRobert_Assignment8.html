@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment8</title>
+	</head>
+	<body>
+	<h1>JavaScript Assignment</h1>
+	
+	<p id="Name"></p>
+	<p id="AssingNum"></p>
+	<p id="dAte"></p>
+	
+	<label for="myCheck">Coffee</label> 
+	<input type="checkbox" id="myCheck" onclick="cofFunction()">
+	<p id="text" style="display:none">Here is your coffee!</p>
+	
+	<label for="cooltea">Ice Tea</label> 
+	<input type="checkbox" id="cooltea" onclick="teaFunction()">
+	<p id="cool" style="display:none">Here is your Ice Tea!</p>
+	
+	<label for="frozen">Ice Cream</label> 
+	<input type="checkbox" id="frozen" onclick="creamFunction()">
+	<p id="fro" style="display:none">Here is your Ice Cream!</p>
+
+	<script>
+		var name = "Robert Yates";
+		document.getElementById("Name").innerHTML = name;
+		
+		var assingNum = "Assignment8";
+		document.getElementById("AssingNum").innerHTML = assingNum;
+		
+		var CuRrDate =  new Date(); // var for date
+		var date = CuRrDate.getDate();
+		
+		var MOnth = CuRrDate.getMonth()+1;
+		var YEar = CuRrDate.getFullYear();
+		if(date<10){
+			date='0'+date;
+			}
+		if(MOnth<10){	MOnth='0'+MOnth;
+			}
+		CuRrDate = MOnth+'-'+date+'-'+YEar;
+		console.log(CuRrDate);
+		document.getElementById("dAte").innerHTML = CuRrDate;
+		
+		function cofFunction() {
+		var checkBox = document.getElementById("myCheck");
+		var text = document.getElementById("text");
+		if (checkBox.checked == true){
+			text.style.display = "block";
+			} else {
+			text.style.display = "none";
+			}
+		}
+		
+		function teaFunction() {
+		var checkBox = document.getElementById("cooltea");
+		var text = document.getElementById("cool");
+		if (checkBox.checked == true){
+			text.style.display = "block";
+			} else {
+			text.style.display = "none";
+			}
+		}
+		
+		function creamFunction() {
+		var checkBox = document.getElementById("frozen");
+		var text = document.getElementById("fro");
+		if (checkBox.checked == true){
+			text.style.display = "block";
+			} else {
+			text.style.display = "none";
+			}
+		}
+
+	
+	
+	
+	</script>
+	</body>
+</html>

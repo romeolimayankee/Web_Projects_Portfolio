@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>YatesRobertAssinment6</title>
+		<link rel="stylesheet" type="text/css" href="YatesRobert_Assignment6.css">
+	</head>
+	<body>
+	<div id="wrapper">
+	<h1>YatesRobert Assingment6</h1>
+	<!-- The following p id tags allow info to be printes to the screen-->
+	<p id="name"></p>
+	<p id="nAme"></p>
+	<p id="mid"></p>
+	<p id="lastslice"></p>
+	<p id="firstslice"></p>
+	<p id="nickname"></p>
+	
+	<script>
+	
+		var name = "Robert Lee Yates"; // Name variable
+		var strlen = name.length; // Gives the length
+		var Mid = name.search("Lee"); // Searches for the middle name
+		var LastSlice = name.slice(11, 16); // Slices the string to only display the last name
+		var FirstSlice = name.slice(-16, -10 ) // Slices the string to display the first name
+		var NickName = name.replace("Lee", "No Nick Name"); // Changes the middle name to a nick name
+	
+		document.getElementById("name").innerHTML = "Robert Lee Yates";
+		document.getElementById("nAme").innerHTML = strlen;
+		document.getElementById("mid").innerHTML = "Lee";
+		document.getElementById("lastslice").innerHTML = LastSlice;
+		document.getElementById("firstslice").innerHTML = FirstSlice;
+		document.getElementById("firstslice").innerHTML = NickName;
+	
+	</script>
+	</div>
+	</body>
+</html>

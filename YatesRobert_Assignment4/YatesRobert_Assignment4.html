@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment4</title>
+		<link rel="stylesheet" type="text/css" href="YatesRobert_Assignment4.css">
+		<!-- To make the page look better I used the style tag and CSS and placed it all in a wrapper -->
+		<style>
+		    body {
+				background-image: url("images/colorSplash.jpg");
+				background-size: stretch;
+				background-repeat: no-repeat;
+					}
+		</style>
+	
+	</head>
+	<body>
+		 <div id="wrapper">
+	        <div class="h1">
+				<h1>Robert Yates Assignment4</h1>
+			</div>	
+				<h3>Paint Bid</h3>
+				<p id="Diameter"></p> <!-- This is for Diameter to be displayed. -->
+                <p id="CostOfPaintPerGallon"></p> <!-- This is for CostOfPaintPerGallon to be displayed. -->
+                <p id="SquareFeetPerGallon"></p> <!-- This is for SquareFeetPerGallon to be diplayed. -->
+				
+                <p id="PI"></p> <!-- This is for PI.-->
+				
+				<p id="decimalNumber"></p>
+				<p id="AreaOfDome"></p> <!-- This is for the area of the dome. -->
+				<h3>Cost to Paint Dome</h3>
+				<p id="FinalCost"></p> <!-- This is to display the final cost for the paint -->
+				
+                
+            <script> //This tag is to signafy that JavaScript is being used.
+                var Diameter = 100;// The folowing var are variables.
+                var CostOfPaintPerGallon = 25;
+                var SquareFeetPerGallon = 150;
+				var PI = 3.14;
+				
+				var decimalNumber = 0.25;
+				var AreaOfDome = decimalNumber * PI * Diameter * Diameter
+				var FinalCost = AreaOfDome * CostOfPaintPerGallon
+				
+                // The following document.getElementById("").innerHTML = ""; calls the id from the p tag.
+                document.getElementById("Diameter").innerHTML = "Diameter: 100";
+                document.getElementById("CostOfPaintPerGallon").innerHTML = "Cost Of Paint Per Gallon: $25";
+                document.getElementById("SquareFeetPerGallon").innerHTML = "Square Feet Per Gallon: 150";
+				document.getElementById("AreaOfDome").innerHTML = "Area of the Dome is: " + AreaOfDome;
+                document.getElementById("FinalCost").innerHTML = "Final Cost is:  " + FinalCost;
+            </script>
+        </div>    
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment3</title>
+		<link rel="stylesheet" type="text/css" href="YatesRobert_Assignment3.css">
+		<!-- To make the page look better I used the style tag and CSS and placed it all in a wrapper -->
+		<style>
+		    body {
+				background-image: url("images/riversky.jpg");
+				background-size: stretch;
+				background-repeat: no-repeat;
+					}
+		</style>
+	
+	</head>
+	<body>
+		 <div id="wrapper">
+	        <div class="h1">
+				<h1>Robert Yates Assignment3</h1>
+			</div>	
+				<h3>Bob's Major Exam Scores</h3>
+				<p id="score1"></p> <!-- This is for score1 to be displayed. -->
+                <p id="score2"></p> <!-- This is for score2 to be displayed. -->
+                <p id="score3"></p> <!-- This is for score3 to be diplayed. -->
+				<h3>Bob's Home Work Average</h3>
+                <p id="HomeWorkAverage"></p> <!-- This is for home work average to be displayed.-->
+				<h3>Sum of all Exams and Home Work Average</h3>
+				<p id="sum"></p> <!-- This is for the sum of all exams and home work average. -->
+				<h3>Bob's Final Grade Average for Course</h3>
+				<p id="FinalAverage"></p> <!-- This is to display the final grade for the course. -->
+				
+                
+            <script> //This tag is to signafy that JavaScript is being used.
+                var score1 = 92;// The folowing var are variables.
+                var score2 = 78;
+                var score3 = 88;
+				var HomeWorkAverage = 95;
+				var numberOfGrades = 4;
+				var sum = HomeWorkAverage + score3 + score2 + score1
+				var FinalAverage = sum / numberOfGrades
+                // The following document.getElementById("").innerHTML = ""; calls the id from the p tag.
+                document.getElementById("score1").innerHTML = "92";
+                document.getElementById("score2").innerHTML = "78";
+                document.getElementById("score3").innerHTML = "88";
+                document.getElementById("HomeWorkAverage").innerHTML = "95";
+                document.getElementById("sum").innerHTML = "Sum of Major Exams and HomeWorkAverage:  "  + sum ;
+                document.getElementById("FinalAverage").innerHTML = "Final Average for Course is:  " + FinalAverage;
+            </script>
+        </div>    
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>YatesRobertAssinment7</title>
+	
+	</head>
+	<body>
+	
+	<h1>YatesRobert Assingment7</h1>
+	<!-- The following p id tags allow info to be printes to the screen-->
+	<p id="name"></p>
+	<p id="assingmentNum"></p>
+	<p id="Currdate"></p>
+	<p id="ARay"></p>
+	<p id="high"></p><p id="low"></p>
+	<p>Please enter a grade ex. 70</p>
+	<input id="inputItem" value=" " />
+	<button onclick="gradeFunction()">Click ME!</button>
+	<p id="Grade"></p>
+	
+	<script>
+	
+		var nme = "Robert Lee Yates"; // Name variable
+		document.getElementById("name").innerHTML = nme;
+		
+		var assing = "Assingment7"; // var for assingmentNum
+		document.getElementById("assingmentNum").innerHTML = assing;
+		
+		var CuRrDate =  new Date(); // var for date
+		var date = CuRrDate.getDate();
+		
+		var MOnth = CuRrDate.getMonth()+1;
+		var YEar = CuRrDate.getFullYear();
+		if(date<10){
+			date='0'+date;
+			}
+		if(MOnth<10){	MOnth='0'+MOnth;
+			}
+		CuRrDate = MOnth+'-'+date+'-'+YEar;
+		console.log(CuRrDate);
+		document.getElementById("Currdate").innerHTML = CuRrDate;
+		
+		var array = [100, 99, 67, 80]; // var for array
+		document.getElementById("ARay").innerHTML = array;
+		
+		var array = [100, 99, 67, 80]; // var for array
+		array.sort(function(a, b){return b-a});
+		document.getElementById("high").innerHTML = array[0];
+		
+		var array = [100, 99, 67, 80]; // var for array
+		array.sort(function(a, b){return b-a});
+		document.getElementById("low").innerHTML = array[3];
+		
+		function gradeFunction() {
+		var inputItem, gradeitem;
+		inputItem = document.getElementById("inputItem").value;
+		gradeitem = (inputItem < 70) ? "You can do better, Please try again":"YAY! You did it! Congrats!!";
+		document.getElementById("Grade").innerHTML = gradeitem;
+		}
+		
+	
+		
+		
+		
+		
+		
+	
+	</script>
+	
+	</body>
+</html>

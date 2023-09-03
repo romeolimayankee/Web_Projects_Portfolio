@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment2</title>
+		<link rel="stylesheet" type="text/css" href="YatesRobert_Assignment2.css">
+		<!-- To make the page look better I used the style tag and CSS and placed it all in a wrapper -->
+		<style>
+		    body { background-color: #E0FFFF;}
+		</style>
+		
+	</head>
+	<body>
+	    <div id="wrapper">
+	        <div class="h1">
+		        <h1><b>YatesRobert_Assignment2</b></h1>
+            </div>
+                <p id="test"></p> <!-- This is for the first line of text to be displayed. -->
+                <p id="text"></p> <!-- This is for the second line of text to be displayed. -->
+                <p id="sixnum"></p> <!-- This is for the six digit number to be diplayed. -->
+                <p id="equ"></p> <!-- This is for the two numbers to be displayed.-->
+                <p id="sum"></p> <!-- This is for the sum of the two numbers . -->
+                <p id="time">To display Date and Time</p>
+                <button type="button" onclick="document.getElementById('time').innerHTML = Date()">Click Here!</button>
+            <script> //This tag is to signafy that JavaScript is being used.
+                var a = 45;// The folowing var are variables.
+                var b = 56;
+                var c = a + b;
+                // The following document.getElementById("").innerHTML = ""; calls the id from the p tag.
+                document.getElementById("test").innerHTML = "Learning JavaScript";
+                document.getElementById("text").innerHTML = "This is great!";
+                document.getElementById("sixnum").innerHTML = "Six digit number: 789651";
+                document.getElementById("equ").innerHTML = "Two numbers: 45 , 56";
+                document.getElementById("sum").innerHTML = "Sum of two numbers:"  + c ;
+                document
+            </script>
+        </div>    
+	</body>
+</html>

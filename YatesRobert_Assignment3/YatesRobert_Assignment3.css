@@ -1,0 +1,16 @@
+#wrapper{   position: relative;
+            text-align: center;
+            background-color: #EBF7D4;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            border-style: double;
+            border-width: 3px;
+}
+.h1{    position: relative;
+        text-align: center;
+        height: 50px;
+        width: 500px;
+        top: -21px;
+        background-color: #98CA32;
+}

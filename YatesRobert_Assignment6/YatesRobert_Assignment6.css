@@ -1,0 +1,14 @@
+body {
+	background-color: lightblue;
+	
+}
+
+#wrapper {
+	position: relative;
+	height: auto;
+	width: 500px;
+	margin: auto;
+	text-align: center;
+	background-color: darkblue;
+	color: white;
+}
